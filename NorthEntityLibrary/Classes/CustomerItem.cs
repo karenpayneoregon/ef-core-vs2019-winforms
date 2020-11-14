@@ -25,6 +25,8 @@ namespace NorthEntityLibrary.Classes
         public int PhoneTypeIdentifier { get; set; }
         public override string ToString() => CompanyName;
 
+        public string ExportLine => $"{CustomerIdentifier},{CompanyName},{ContactName}";
+
         public static Expression<Func<Customers, CustomerItem>> Projection
         {
             get
