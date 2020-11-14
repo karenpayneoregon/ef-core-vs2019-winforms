@@ -2,6 +2,8 @@
 
 Taking a VS2017 Windows Form and class project using Entity Framework Core to VS2019 .NET Core Windows forms.
 
+![screen](assets/exportCountry.png)
+
 # Instructions to run
 
 1. Open the following [database script](https://gist.github.com/karenpayneoregon/9bdf1a7d5310ac1d562b2326d79d6038) on GitHub.
