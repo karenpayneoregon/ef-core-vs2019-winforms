@@ -76,6 +76,7 @@ namespace NorthEntityLibrary.Classes
         public static int ToFile(IEnumerable<CustomerItem> customerItems, string countryName)
         {
             using var file = new System.IO.StreamWriter($"{countryName}.txt");
+
             int skipped = 0;
 
             foreach (CustomerItem customerItem in customerItems)
@@ -89,7 +90,7 @@ namespace NorthEntityLibrary.Classes
                     skipped++;
                 }
             }
-            // Notice how skippedLines is in scope here.
+
             return skipped;
             // file is disposed here
         }
